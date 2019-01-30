@@ -6,7 +6,7 @@
   the input changes state.
 
   <input type="checkbox" class="toggle-checked" />
-  <div class="toggle-target"> Hidden until checkbox is clicked </div>
+  <div class="toggle-target"> Hidden until the checkbox is clicked on</div>
 */
 
 .toggle-checked:not(:checked) ~ .toggle-target {
