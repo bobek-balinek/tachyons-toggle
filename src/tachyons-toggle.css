@@ -21,7 +21,7 @@
   of `toggle-unchecked` class on the checkbox.
 */
 
-.toggle-checked:not(:checked) ~ .toggle-target {
+.toggle-unchecked:not(:checked) ~ .toggle-target {
   display: block;
 }
 .toggle-unchecked:checked ~ .toggle-target {
