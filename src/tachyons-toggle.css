@@ -1,0 +1,29 @@
+/*
+  Hide element & reveal an element with a checkbox:
+
+  Put the `toggle-checked` class on a checkbox input and any adjacent element
+  with the `toggle-target` class will be hidden and displayed when
+  the input changes state.
+
+  <input type="checkbox" class="toggle-checked" />
+  <div class="toggle-target"> Hidden until checkbox is clicked </div>
+*/
+
+.toggle-checked:not(:checked) ~ .toggle-target {
+  display: none;
+}
+.toggle-checked:checked ~ .toggle-target {
+  display: block;
+}
+
+/*
+  Similarly, you can achieve the opposive effect with the use
+  of `toggle-unchecked` class on the checkbox.
+*/
+
+.toggle-checked:not(:checked) ~ .toggle-target {
+  display: block;
+}
+.toggle-unchecked:checked ~ .toggle-target {
+  display: none;
+}
